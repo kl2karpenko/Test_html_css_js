@@ -2,12 +2,16 @@
 <html>
 <head>
 	<title>Task4</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<style type="text/css">
+		* {
+			-webkit-padding-start: 0;
+		}
 		.navRow {
 			width: 80%;
 			margin: auto;
 		}
-		li {
+		li, ul {
 			list-style-type: none;
 		}
 		ul.menu {
@@ -18,10 +22,12 @@
 			margin: 0;
 		}
 		ul.subMenu {
+			display: flex;
+			justify-content: space-between;
 			position: absolute;
 			width: 100%;
+			left: 0;
 			padding: 0;
-			margin: 0;
 		}
 		ul.subMenu > li {
 			display: none;
